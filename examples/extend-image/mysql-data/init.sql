@@ -11,7 +11,7 @@ Drop TABLE IF EXISTS `classifiers`;
 CREATE TABLE `caseFiles` (
   `id` int(11) NOT NULL AUTO_INCREMENT DEFAULT NULL,
   `filename` varchar(255) UNIQUE DEFAULT NULL,
-  `date` date DEFAULT DATE(),
+  `date` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
